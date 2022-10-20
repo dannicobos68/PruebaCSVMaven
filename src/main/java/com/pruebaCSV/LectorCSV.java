@@ -16,7 +16,9 @@ public class LectorCSV {
             CSVReader csvReader = new CSVReader(new FileReader(nombreArchivo));
             String[] fila;
             while((fila=csvReader.readNext()) != null){
-                System.out.println(fila[0]+ " | ");
+                System.out.println(fila[0] + " | " +
+                                    fila[1]+ " | " +
+                                    fila[2]+ " | " );
             }
             csvReader.close();
         }
